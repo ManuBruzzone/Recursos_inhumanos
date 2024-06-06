@@ -2,7 +2,7 @@
 
 Manuel Bruzzone - 311
 
-Recursos Inhumanos se dedica a cargar, actualizar, modificar o eliminar una lista de usuarios almacenados en un archivo CSV.
+Recursos Inhumanos se dedica a cargar, leer, modificar o eliminar una lista de usuarios almacenados en un archivo CSV.
 
 ## Tabla de Contenidos
 
