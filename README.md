@@ -21,7 +21,7 @@ Lista de requisitos necesarios para ejecutar el proyecto.
 
 ## Estructura del Proyecto
 
-RECURSOS_INHUMANOS2.0/
+RECURSOS_INHUMANOS2.0/   
 ├── Package_Input/   
 ├── __pycache__/   
 ├── Empleados.csv   
