@@ -41,6 +41,6 @@ empleados.py: Módulo que contiene la lógica relacionada con los empleados.
 funciones.py: Módulo con funciones auxiliares para el proyecto.   
 main.py: Módulo principal para ejecutar el proyecto.
 
-```bash
 # Clonar el repositorio
+```bash
 git clone https://github.com/ManuBruzzone/Recursos_inhumanos.git
