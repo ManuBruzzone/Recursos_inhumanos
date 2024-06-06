@@ -21,6 +21,7 @@ Lista de requisitos necesarios para ejecutar el proyecto.
 
 ## Estructura del Proyecto
 
+```plaintext
 RECURSOS_INHUMANOS2.0/   
 ├── Package_Input/   
 ├── __pycache__/   
@@ -30,6 +31,7 @@ RECURSOS_INHUMANOS2.0/
 ├── empleados.py   
 ├── funciones.py   
 └── main.py
+```
 
 ### Descripción de Archivos
 
