@@ -9,10 +9,15 @@ Recursos Inhumanos se dedica a cargar, leer, modificar o eliminar una lista de u
 - [Introducción](#introducción)
 - [Requisitos](#requisitos)
 - [Estructura del Proyecto](#estructura-del-proyecto)
+- [Video](#video)
 
 ## Introducción
 
 El proyecto "Recursos Inhumanos" surge como una solución innovadora para la gestión eficiente del capital humano en las organizaciones. En un mundo empresarial en constante evolución, la optimización de los recursos humanos se ha convertido en un factor crucial para el éxito y la competitividad de las empresas.
+
+## Video
+
+- [Video] https://www.youtube.com/watch?v=obqFc7pvgGI
 
 ## Requisitos
 

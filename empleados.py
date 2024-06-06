@@ -32,6 +32,7 @@ def crear_empleado(id, nombre: str, apellido: str, dni: int, puesto: str, salari
     return diccionario_empleado
 
 def ingresar_empleado_lista(lista_empleados: list,id: int): #retorne si pudo o no
+
     dni = get_int('Ingrese su DNI: ','Re-Ingrese su DNI: ', 5000000, 99999999, 3)
     nombre = get_string('Ingrese su nombre: ','Re-Ingrese su nombre: ',1, 20, 3)
     apellido = get_string('Ingrese su apellido: ','Re-Ingrese su apellido: ',1, 20, 3)
@@ -41,7 +42,6 @@ def ingresar_empleado_lista(lista_empleados: list,id: int): #retorne si pudo o n
     diccionario_empleado = crear_empleado(id, nombre, apellido, dni, puesto, salario)
 
     lista_empleados.append(diccionario_empleado)
-
 
 # Read
 def mostrar_un_empleado(un_empleado: dict):
