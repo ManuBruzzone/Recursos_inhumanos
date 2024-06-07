@@ -32,16 +32,27 @@ def crear_empleado(id, nombre: str, apellido: str, dni: int, puesto: str, salari
     return diccionario_empleado
 
 def ingresar_empleado_lista(lista_empleados: list,id: int): #retorne si pudo o no
-
     dni = get_int('Ingrese su DNI: ','Re-Ingrese su DNI: ', 5000000, 99999999, 3)
+    system('cls')
     nombre = get_string('Ingrese su nombre: ','Re-Ingrese su nombre: ',1, 20, 3)
+    system('cls')
     apellido = get_string('Ingrese su apellido: ','Re-Ingrese su apellido: ',1, 20, 3)
+    system('cls')
     puesto = get_string_puesto('Ingrese su puesto:\n“Gerente”\n“Supervisor"\n“Analista”\n“Encargado”\n“Asistente”\nAqui su respuesta: ','Re-Ingrese su puesto: ',3, 20, 3)
+    system('cls')
     salario = get_int('Ingrese su sueldo: ','Re-Ingrese su sueldo: ', 234315, 99999999, 3)
+    system('cls')
 
-    diccionario_empleado = crear_empleado(id, nombre, apellido, dni, puesto, salario)
+    if dni != None and nombre != None and apellido != None and puesto != None and salario != None:
 
-    lista_empleados.append(diccionario_empleado)
+        diccionario_empleado = crear_empleado(id, nombre, apellido, dni, puesto, salario)
+
+        lista_empleados.append(diccionario_empleado)
+
+        print('Empleado agregado correctamente.')
+
+    else:
+        print('No se pudo cargar el empleado: uno o más datos no son válidos.\nSi desea volver a intentar re ingrese la opcion "1" en el menu principal')
 
 # Read
 def mostrar_un_empleado(un_empleado: dict):

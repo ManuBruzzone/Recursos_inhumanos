@@ -7,17 +7,22 @@ def get_int (mensaje: str, mensaje_error: str, minimo: int, maximo:int, reintent
     numero_entero_final = None
 
     while cantidad_reintentos < reintentos:
-        numero = input(mensaje)
-        numero = int(numero)
+        try:
+            numero = input(mensaje)
+            numero = int(numero)
 
-        if validate_number(numero, minimo, maximo):
-            numero_entero_final = numero
-            break
+            if validate_number(numero, minimo, maximo):
+                numero_entero_final = numero
+                break
 
-        else:
+            else:
+                cantidad_reintentos += 1
+                if cantidad_reintentos < reintentos:
+                    print(f'{mensaje_error}{cantidad_reintentos}/{reintentos}')
+        except:
             cantidad_reintentos += 1
             if cantidad_reintentos < reintentos:
-                print(f'{mensaje_error}{cantidad_reintentos}/{reintentos}')
+                print(f'{mensaje_error} {cantidad_reintentos}/{reintentos}')
 
     return numero_entero_final
 

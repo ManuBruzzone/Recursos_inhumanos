@@ -50,7 +50,7 @@ def leer_archivo_json(path):
     return diccionario
 
 def generar_reporte(lista, path):
-    nro_reporte = generar_nro_reporte(path)
+    nro_reporte = generar_nro(path)
     fecha_solicitud = datetime.datetime.now().strftime("%Y-%m-%d")
     cantidad_empleados = len(lista)
 
@@ -63,7 +63,7 @@ def generar_reporte(lista, path):
             archivo.write(f"{empleado['id']:<5}{empleado['apellido']}, {empleado['nombre']:<30}{empleado['salario']:<12}{empleado['puesto']:<12}\n")
 
 
-def generar_nro_reporte(path):
+def generar_nro(path):
     try:
        with open(path, 'r+') as archivo:
             contenido = archivo.read()
@@ -72,7 +72,7 @@ def generar_nro_reporte(path):
             archivo.write(str(numero_reporte + 1))
 
     except:
-        print('Se generará el primer reporte.')
+        print('Se generará el archivo.')
         numero_reporte = 1
         with open(path, 'w') as archivo:
             archivo.write('1')
